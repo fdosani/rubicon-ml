@@ -2,9 +2,7 @@
 # https://github.com/fdosani/run-edgetest-action
 
 name: Run edgetest
-on:
-  schedule:
-    - cron: '0 10 * * 1-5'
+on: workflow_dispatch
 jobs:
   edgetest:
     runs-on: ubuntu-latest
